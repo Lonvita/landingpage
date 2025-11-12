@@ -5,145 +5,158 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="./style.css">
+  <script src="https://kit.fontawesome.com/2c3f2458aa.js" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+  <style type="text/tailwindcss">
+    @theme {
+      --color-beige: #f9f1ef;
+      --color-blue: #183f5f;
+    }
+  </style>
   <title>LONVITA</title>
 </head>
 
-<body>
-  <header>
-    <h1>LONVITA.IO</h1>
-    <h2>Your personal AI Mentor for Longevity, Nutrition & Sports</h2>
-    <p>LONVITA.IO combines science, wearable data, and daily guidance to optimize your health and performance.</p>
+<body class="min-w-[320px] poppins-light">
+  <header class="flex flex-col items-center p-10 lg:p-30 text-white bg-gradient-to-br from-[#0a2a4a] to-[#2a5a7a] relative overflow-hidden">
+    <img src="./assets/1.jpeg" class="object-cover absolute inset-0 w-full h-full opacity-20 pointer-events-none" alt="Lonvita header background">
+    <div class="container mx-auto p-8 flex flex-col items-center gap-4">
+      <h1 class="text-2xl font-bold mb-10">LONVITA.IO</h1>
+      <h2 class="text-3xl font-bold">Your personal AI Mentor for Longevity, Nutrition & Sports</h2>
+      <p class="text-xl">LONVITA.IO combines science, wearable data, and daily guidance to optimize your health and performance.</p>
+    </div>
   </header>
 
-  <main>
-    <section>
-      <h2>How it works</h2>
-      <p>Three simple steps to get personalized, AI powered insights</p>
+  <main class="bg-beige w-full">
+    <div class="container mx-auto py-16 px-8 flex flex-col items-center gap-6">
+      <h2 class="text-2xl font-bold">How it works</h2>
+      <p class="text-center">Three simple steps to get personalized, AI powered insights</p>
 
-      <ul>
-        <li>
+      <ul class="grid grid-flow-row lg:grid-cols-3 gap-6">
+        <li class="flex flex-col items-center justify-center lg:aspect-square gap-6 bg-white p-12 rounded-xl">
           <!-- <img src="connect-icon.png" alt="Connect Icon"> -->
-          <h3>Connect</h3>
-          <p>Connect your personal health application from your smartphone with LONVITA.IO</p>
+          <span class="text-xl p-5 rounded-xl text-white bg-gradient-to-br from-[#0a2a4a] to-[#2a5a7a]"><i class="fa-sharp fa-solid fa-fw fa-link"></i></span>
+          <h3 class="text-xl font-bold">Connect</h3>
+          <p class="text-center">Connect your personal health application from your smartphone with LONVITA.IO</p>
         </li>
-        <li>
-          <!-- <img src="connect-icon.png" alt="Connect Icon"> -->
-          <h3>AI Analysis</h3>
-          <p>The more data you share, the better LONVITA can guide you</p>
+        <li class="flex flex-col items-center justify-center lg:aspect-square gap-6 bg-white p-12 rounded-xl">
+          <span class="text-xl p-5 rounded-xl text-white bg-gradient-to-br from-[#0a2a4a] to-[#2a5a7a]"><i class="fa-sharp fa-regular fa-fw fa-clock"></i></span>
+          <h3 class="text-xl font-bold">AI Analysis</h3>
+          <p class="text-center">The more data you share, the better LONVITA can guide you</p>
         </li>
-        <li>
-          <!-- <img src="connect-icon.png" alt="Connect Icon"> -->
-          <h3>Actionable Insights</h3>
-          <p>LONVITA builds your personalized daily routine from your data, adapts to your needs</p>
+        <li class="flex flex-col items-center justify-center lg:aspect-square gap-6 bg-white p-12 rounded-xl">
+          <span class="text-xl p-5 rounded-xl text-white bg-gradient-to-br from-[#0a2a4a] to-[#2a5a7a]"><i class="fa-sharp fa-regular fa-fw fa-square-check"></i></span>
+          <h3 class="text-xl font-bold">Actionable Insights</h3>
+          <p class="text-center">LONVITA builds your personalized daily routine from your data, adapts to your needs</p>
         </li>
       </ul>
-    </section>
+    </div>
 
-    <section>
-      <h2>Works with Your Favorite Devices</h2>
-      <ul>
-        <li>Apple</li>
-        <li>Android</li>
-        <li>WHOOP</li>
-        <li>Strava</li>
-        <li>Garmin</li>
+    <div class="container mx-auto py-16 px-8 flex flex-col flex-wrap items-center gap-6">
+      <h2 class="text-2xl font-bold">Works with Your Favorite Devices</h2>
+      <ul class="grid grid-flow-row grid-cols-3 sm:grid-cols-3 gap-4">
+        <li class="text-xl flex flex-col items-center justify-center aspect-square bg-white p-3 rounded"><i class="fa-sharp fa-brands fa-fw fa-apple"></i></li>
+        <li class="text-xl flex flex-col items-center justify-center aspect-square bg-white p-3 rounded"><i class="fa-sharp fa-brands fa-fw fa-android"></i></li>
+        <!-- <li class="text-xl flex flex-col items-center justify-center aspect-square bg-white p-3 rounded"><i class="fa-sharp fa-brands fa-fw fa-whoop"></i></li> -->
+        <li class="text-xl flex flex-col items-center justify-center aspect-square bg-white p-3 rounded"><i class="fa-sharp fa-brands fa-fw fa-strava"></i></li>
+        <!-- <li class="text-xl flex flex-col items-center justify-center aspect-square bg-white p-3 rounded"><i class="fa-sharp fa-brands fa-fw fa-garmin"></i></li> -->
       </ul>
-    </section>
+    </div>
 
-    <section>
-      <h2>What LONVITA Includes</h2>
+    <div class="container mx-auto py-16 px-8 flex flex-col items-center gap-6">
+      <h2 class="text-2xl font-bold">What LONVITA Includes</h2>
       <p>Four powerful pillars working together to transform your health journey</p>
 
-      <ul>
-        <li>
-          <!-- <img src="" alt=""> -->
-          <h3>AI Mentor</h3>
+      <ul class="grid grid-flow-row grid-cols-1 md:grid-cols-2 xl:grid-cols-4 gap-6">
+        <li class="flex flex-col items-center gap-6 bg-white p-12 rounded-xl">
+          <span class="text-xl p-5 rounded-xl text-white bg-gradient-to-br from-[#0a2a4a] to-[#2a5a7a]"><i class="fa-sharp fa-solid fa-fw fa-layer-group"></i></span>
+          <h3 class="text-xl font-bold">AI Mentor</h3>
           <p>Personalized daily insights from science and wearables, tailored to your unique biology and goals</p>
         </li>
-        <li>
-          <!-- <img src="" alt=""> -->
-          <h3>Marketplace</h3>
+        <li class="flex flex-col items-center gap-6 bg-white p-12 rounded-xl">
+          <span class="text-xl p-5 rounded-xl text-white bg-gradient-to-br from-[#0a2a4a] to-[#2a5a7a]"><i class="fa-sharp fa-solid fa-fw fa-cart-shopping"></i></span>
+          <h3 class="text-xl font-bold">Marketplace</h3>
           <p>Smart product recommendations including supplements, routines, and tools backed by evidence</p>
         </li>
-        <li>
-          <!-- <img src="" alt=""> -->
-          <h3>Longevity Clinics</h3>
+        <li class="flex flex-col items-center gap-6 bg-white p-12 rounded-xl">
+          <span class="text-xl p-5 rounded-xl text-white bg-gradient-to-br from-[#0a2a4a] to-[#2a5a7a]"><i class="fa-sharp fa-regular fa-fw fa-house"></i></span>
+          <h3 class="text-xl font-bold">Longevity Clinics</h3>
           <p>Access to selected partner facilities across Europe for advanced diagnostics and treatments</p>
         </li>
-        <li>
-          <!-- <img src="" alt=""> -->
-          <h3>Hotel Collaborations</h3>
+        <li class="flex flex-col items-center gap-6 bg-white p-12 rounded-xl">
+          <span class="text-xl p-5 rounded-xl text-white bg-gradient-to-br from-[#0a2a4a] to-[#2a5a7a]"><i class="fa-sharp fa-solid fa-fw fa-hotel"></i></span>
+          <h3 class="text-xl font-bold">Hotel Collaborations</h3>
           <p>Luxury hotels in many countries for non-medical treatments, wellness programs, and personalized coaching</p>
         </li>
       </ul>
-    </section>
+    </div>
 
-    <hr>
+    <div class="bg-gradient-to-br from-[#0a2a4a] to-[#2a5a7a] text-white w-full">
+      <div class="container mx-auto py-16 px-8 flex flex-col items-center gap-6">
+        <h2 class="text-2xl font-bold">Experience the platform</h2>
+        <p>Intuitive interfaces designed for your daily health optimization</p>
+      </div>
+    </div>
 
-    <section>
-      <h2>Experience the platform</h2>
-      <p>Intuitive interfaces designed for your daily health optimization</p>
-    </section>
-
-    <section>
-      <h2>Why LONVITA.IO</h2>
+    <div class="container mx-auto py-16 px-8 flex flex-col items-center gap-6">
+      <h2 class="text-2xl font-bold">Why LONVITA.IO</h2>
       <p>Built on the foundation of science, privacy, and personalization</p>
 
-      <ul>
-        <li>
-          <!-- <img src="" alt=""> -->
-          <h3>Science-based recommendations</h3>
+      <ul class="grid grid-flow-row grid-cols-1 md:grid-cols-2 xl:grid-cols-4 gap-4">
+        <li class="flex flex-col items-center gap-6 bg-white p-12 rounded-xl">
+          <span class="text-xl p-5 rounded-xl text-white bg-gradient-to-br from-[#0a2a4a] to-[#2a5a7a]"><i class="fa-sharp fa-solid fa-fw fa-book"></i></span>
+          <h3 class="text-xl font-bold">Science-based recommendations</h3>
           <p>Every insight is grounded in peer-reviewed research and validated clinical studies</p>
         </li>
-        <li>
-          <!-- <img src="" alt=""> -->
-          <h3>Personalized guidance using user data + wearables</h3>
+        <li class="flex flex-col items-center gap-6 bg-white p-12 rounded-xl">
+          <span class="text-xl p-5 rounded-xl text-white bg-gradient-to-br from-[#0a2a4a] to-[#2a5a7a]"><i class="fa-sharp fa-solid fa-fw fa-user"></i></span>
+          <h3 class="text-xl font-bold">Personalized guidance using user data + wearables</h3>
           <p>Integrates seamlessly with your devices to provide truly individualized recommendations</p>
         </li>
-        <li>
-          <!-- <img src="" alt=""> -->
-          <h3>Personalized guidance using user data + wearables</h3>
+        <li class="flex flex-col items-center gap-6 bg-white p-12 rounded-xl">
+          <span class="text-xl p-5 rounded-xl text-white bg-gradient-to-br from-[#0a2a4a] to-[#2a5a7a]"><i class="fa-sharp fa-solid fa-fw fa-lock"></i></span>
+          <h3 class="text-xl font-bold">Privacy-first architecture</h3>
           <p>Your health data is encrypted, secure, and never shared without your explicit consent</p>
         </li>
-        <li>
-          <!-- <img src="" alt=""> -->
-          <h3>Evidence-based + actionable insights</h3>
+        <li class="flex flex-col items-center gap-6 bg-white p-12 rounded-xl">
+          <span class="text-xl p-5 rounded-xl text-white bg-gradient-to-br from-[#0a2a4a] to-[#2a5a7a]"><i class="fa-sharp fa-solid fa-fw fa-chart-simple"></i></span>
+          <h3 class="text-xl font-bold">Evidence-based + actionable insights</h3>
           <p>Clear, practical guidance you can implement immediately to see real results</p>
         </li>
       </ul>
-    </section>
+    </div>
   </main>
 
-  <footer>
-    <section>
-      <h3>Join the LONVITA experience</h3>
-      <ul>
+  <footer class="bg-gradient-to-br from-[#0a2a4a] to-[#2a5a7a] text-white">
+    <div class="container mx-auto py-16 px-8 flex flex-col items-center gap-4">
+      <h3 class="text-xl font-bold">Join the LONVITA experience</h3>
+      <ul class="flex flex-row gap-4">
         <li>Apple App Store</li>
         <li>Google Play Store</li>
       </ul>
-    </section>
+    </div>
 
-    <section>
-      <p>envi GmbH
-        Geschäftsführer: Christian Beyer | Alexandra Huber
-        Mooslenz 39
+    <div class="container mx-auto p-8 flex flex-row flex-wrap md:justify-center items-center gap-4 text-xs">
+      <p>
+        envi GmbH<br>
+        Geschäftsführer: Christian Beyer | Alexandra Huber<br>
+        Mooslenz 39<br>
         6345 Kössen, Österreich
       </p>
 
       <p>
-        Firmenbuchnummer: FN 524080g
-        Firmenbuchgericht: Landesgericht Innsbruck
-        Umsatzsteuer-Identifikationsnummer (UID): ATU75083623
-        GLN: 9110028339202
+        Firmenbuchnummer: FN 524080g<br>
+        Firmenbuchgericht: Landesgericht Innsbruck<br>
+        Umsatzsteuer-Identifikationsnummer (UID): ATU75083623<br>
+        GLN: 9110028339202<br>
         EORI: ATEOS1000104620
       </p>
 
       <p>
-        Kontakt:
-        Telefon: +43 664 18 23 926
+        Kontakt:<br>
+        Telefon: +43 664 18 23 926<br>
         E-Mail: contact@envinaturals.com
       </p>
-    </section>
+    </div>
   </footer>
 </body>
 
