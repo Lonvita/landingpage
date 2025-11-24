@@ -10,14 +10,15 @@
   <style type="text/tailwindcss">
     @theme {
       --color-beige: #f9f1ef;
-      --color-blue: #183f5f;
+      --color-dark-blue: #0a2a4a;
+      --color-light-blue: #2a5a7a;
     }
   </style>
   <title>LONVITA</title>
 </head>
 
 <body class="min-w-[320px] poppins-light">
-  <header class="flex flex-col items-center p-10 lg:p-30 text-white bg-gradient-to-br from-[#0a2a4a] to-[#2a5a7a] relative overflow-hidden">
+  <header class="flex flex-col items-center p-10 lg:p-30 text-white bg-gradient-to-br from-dark-blue to-light-blue relative overflow-hidden">
     <img src="./assets/1.jpeg" class="object-cover absolute inset-0 w-full h-full opacity-20 pointer-events-none" alt="Lonvita header background">
     <div class="container mx-auto p-8 flex flex-col items-center gap-4">
       <h1 class="text-2xl font-bold mb-10">LONVITA.IO</h1>
@@ -26,136 +27,201 @@
     </div>
   </header>
 
-  <main class="bg-beige w-full">
-    <div class="container mx-auto py-16 px-8 flex flex-col items-center gap-6">
-      <h2 class="text-2xl font-bold">How it works</h2>
-      <p class="text-center">Three simple steps to get personalized, AI powered insights</p>
+  <main class="bg-beige">
+    <section>
+      <div class="py-16 container mx-auto px-8 flex flex-col items-center gap-6">
+        <h2 class="text-2xl font-bold">How LONVITA works</h2>
+        <p class="text-center">Three simple steps to get personalized, AI powered insights</p>
 
-      <ul class="grid grid-flow-row lg:grid-cols-3 gap-6">
-        <li class="flex flex-col items-center justify-center lg:aspect-square gap-6 bg-white p-12 rounded-xl">
-          <!-- <img src="connect-icon.png" alt="Connect Icon"> -->
-          <span class="text-xl p-5 rounded-xl text-white bg-gradient-to-br from-[#0a2a4a] to-[#2a5a7a]"><i class="fa-sharp fa-solid fa-fw fa-link"></i></span>
-          <h3 class="text-xl font-bold">Connect</h3>
-          <p class="text-center">Connect your personal health application from your smartphone with LONVITA.IO</p>
-        </li>
-        <li class="flex flex-col items-center justify-center lg:aspect-square gap-6 bg-white p-12 rounded-xl">
-          <span class="text-xl p-5 rounded-xl text-white bg-gradient-to-br from-[#0a2a4a] to-[#2a5a7a]"><i class="fa-sharp fa-regular fa-fw fa-clock"></i></span>
-          <h3 class="text-xl font-bold">AI Analysis</h3>
-          <p class="text-center">The more data you share, the better LONVITA can guide you</p>
-        </li>
-        <li class="flex flex-col items-center justify-center lg:aspect-square gap-6 bg-white p-12 rounded-xl">
-          <span class="text-xl p-5 rounded-xl text-white bg-gradient-to-br from-[#0a2a4a] to-[#2a5a7a]"><i class="fa-sharp fa-regular fa-fw fa-square-check"></i></span>
-          <h3 class="text-xl font-bold">Actionable Insights</h3>
-          <p class="text-center">LONVITA builds your personalized daily routine from your data, adapts to your needs</p>
-        </li>
-      </ul>
-    </div>
-
-    <div class="container mx-auto py-16 px-8 flex flex-col flex-wrap items-center gap-6">
-      <h2 class="text-2xl font-bold">Works with Your Favorite Devices</h2>
-      <ul class="grid grid-flow-row grid-cols-3 sm:grid-cols-3 gap-4">
-        <li class="text-xl flex flex-col items-center justify-center aspect-square bg-white p-3 rounded"><i class="fa-sharp fa-brands fa-fw fa-apple"></i></li>
-        <li class="text-xl flex flex-col items-center justify-center aspect-square bg-white p-3 rounded"><i class="fa-sharp fa-brands fa-fw fa-android"></i></li>
-        <!-- <li class="text-xl flex flex-col items-center justify-center aspect-square bg-white p-3 rounded"><i class="fa-sharp fa-brands fa-fw fa-whoop"></i></li> -->
-        <li class="text-xl flex flex-col items-center justify-center aspect-square bg-white p-3 rounded"><i class="fa-sharp fa-brands fa-fw fa-strava"></i></li>
-        <!-- <li class="text-xl flex flex-col items-center justify-center aspect-square bg-white p-3 rounded"><i class="fa-sharp fa-brands fa-fw fa-garmin"></i></li> -->
-      </ul>
-    </div>
-
-    <div class="container mx-auto py-16 px-8 flex flex-col items-center gap-6">
-      <h2 class="text-2xl font-bold">What LONVITA Includes</h2>
-      <p>Four powerful pillars working together to transform your health journey</p>
-
-      <ul class="grid grid-flow-row grid-cols-1 md:grid-cols-2 xl:grid-cols-4 gap-6">
-        <li class="flex flex-col items-center gap-6 bg-white p-12 rounded-xl">
-          <span class="text-xl p-5 rounded-xl text-white bg-gradient-to-br from-[#0a2a4a] to-[#2a5a7a]"><i class="fa-sharp fa-solid fa-fw fa-layer-group"></i></span>
-          <h3 class="text-xl font-bold">AI Mentor</h3>
-          <p>Personalized daily insights from science and wearables, tailored to your unique biology and goals</p>
-        </li>
-        <li class="flex flex-col items-center gap-6 bg-white p-12 rounded-xl">
-          <span class="text-xl p-5 rounded-xl text-white bg-gradient-to-br from-[#0a2a4a] to-[#2a5a7a]"><i class="fa-sharp fa-solid fa-fw fa-cart-shopping"></i></span>
-          <h3 class="text-xl font-bold">Marketplace</h3>
-          <p>Smart product recommendations including supplements, routines, and tools backed by evidence</p>
-        </li>
-        <li class="flex flex-col items-center gap-6 bg-white p-12 rounded-xl">
-          <span class="text-xl p-5 rounded-xl text-white bg-gradient-to-br from-[#0a2a4a] to-[#2a5a7a]"><i class="fa-sharp fa-regular fa-fw fa-house"></i></span>
-          <h3 class="text-xl font-bold">Longevity Clinics</h3>
-          <p>Access to selected partner facilities across Europe for advanced diagnostics and treatments</p>
-        </li>
-        <li class="flex flex-col items-center gap-6 bg-white p-12 rounded-xl">
-          <span class="text-xl p-5 rounded-xl text-white bg-gradient-to-br from-[#0a2a4a] to-[#2a5a7a]"><i class="fa-sharp fa-solid fa-fw fa-hotel"></i></span>
-          <h3 class="text-xl font-bold">Hotel Collaborations</h3>
-          <p>Luxury hotels in many countries for non-medical treatments, wellness programs, and personalized coaching</p>
-        </li>
-      </ul>
-    </div>
-
-    <div class="bg-gradient-to-br from-[#0a2a4a] to-[#2a5a7a] text-white w-full">
-      <div class="container mx-auto py-16 px-8 flex flex-col items-center gap-6">
-        <h2 class="text-2xl font-bold">Experience the platform</h2>
-        <p>Intuitive interfaces designed for your daily health optimization</p>
+        <ul class="grid grid-flow-row lg:grid-cols-3 gap-6">
+          <li class="flex flex-col items-center justify-center lg:aspect-square gap-6 bg-white p-12 rounded-xl">
+            <!-- <img src="connect-icon.png" alt="Connect Icon"> -->
+            <span class="text-xl p-5 rounded-xl text-white bg-gradient-to-br from-dark-blue to-light-blue"><i class="fa-sharp fa-solid fa-fw fa-link"></i></span>
+            <h3 class="text-xl font-bold">Connect</h3>
+            <p class="text-center">Connect your personal health application from your smartphone with LONVITA.IO</p>
+          </li>
+          <li class="flex flex-col items-center justify-center lg:aspect-square gap-6 bg-white p-12 rounded-xl">
+            <span class="text-xl p-5 rounded-xl text-white bg-gradient-to-br from-dark-blue to-light-blue"><i class="fa-sharp fa-regular fa-fw fa-clock"></i></span>
+            <h3 class="text-xl font-bold">AI Analysis</h3>
+            <p class="text-center">The more data you share, the better LONVITA can guide you</p>
+          </li>
+          <li class="flex flex-col items-center justify-center lg:aspect-square gap-6 bg-white p-12 rounded-xl">
+            <span class="text-xl p-5 rounded-xl text-white bg-gradient-to-br from-dark-blue to-light-blue"><i class="fa-sharp fa-regular fa-fw fa-square-check"></i></span>
+            <h3 class="text-xl font-bold">Actionable Insights</h3>
+            <p class="text-center">LONVITA builds your personalized daily routine from your data, adapts to your needs</p>
+          </li>
+        </ul>
       </div>
-    </div>
+    </section>
 
-    <div class="container mx-auto py-16 px-8 flex flex-col items-center gap-6">
-      <h2 class="text-2xl font-bold">Why LONVITA.IO</h2>
-      <p>Built on the foundation of science, privacy, and personalization</p>
+    <section class="py-16 bg-gradient-to-br from-dark-blue to-light-blue text-white">
+      <div class="container mx-auto flex flex-col flex-wrap items-center gap-6">
+        <h3 class="text-xl font-bold">Works with Your Favorite Devices</h3>
+        <ul class="grid grid-flow-row grid-cols-3 sm:grid-cols-3 gap-4 text-dark-blue">
+          <li class="text-xl flex flex-col items-center justify-center aspect-square bg-white p-3 rounded"><i class="fa-sharp fa-brands fa-fw fa-apple"></i></li>
+          <li class="text-xl flex flex-col items-center justify-center aspect-square bg-white p-3 rounded"><i class="fa-sharp fa-brands fa-fw fa-android"></i></li>
+          <!-- <li class="text-xl flex flex-col items-center justify-center aspect-square bg-white p-3 rounded"><i class="fa-sharp fa-brands fa-fw fa-whoop"></i></li> -->
+          <li class="text-xl flex flex-col items-center justify-center aspect-square bg-white p-3 rounded"><i class="fa-sharp fa-brands fa-fw fa-strava"></i></li>
+          <!-- <li class="text-xl flex flex-col items-center justify-center aspect-square bg-white p-3 rounded"><i class="fa-sharp fa-brands fa-fw fa-garmin"></i></li> -->
+        </ul>
+      </div>
+    </section>
 
-      <ul class="grid grid-flow-row grid-cols-1 md:grid-cols-2 xl:grid-cols-4 gap-4">
-        <li class="flex flex-col items-center gap-6 bg-white p-12 rounded-xl">
-          <span class="text-xl p-5 rounded-xl text-white bg-gradient-to-br from-[#0a2a4a] to-[#2a5a7a]"><i class="fa-sharp fa-solid fa-fw fa-book"></i></span>
-          <h3 class="text-xl font-bold">Science-based recommendations</h3>
-          <p>Every insight is grounded in peer-reviewed research and validated clinical studies</p>
-        </li>
-        <li class="flex flex-col items-center gap-6 bg-white p-12 rounded-xl">
-          <span class="text-xl p-5 rounded-xl text-white bg-gradient-to-br from-[#0a2a4a] to-[#2a5a7a]"><i class="fa-sharp fa-solid fa-fw fa-user"></i></span>
-          <h3 class="text-xl font-bold">Personalized guidance using user data + wearables</h3>
-          <p>Integrates seamlessly with your devices to provide truly individualized recommendations</p>
-        </li>
-        <li class="flex flex-col items-center gap-6 bg-white p-12 rounded-xl">
-          <span class="text-xl p-5 rounded-xl text-white bg-gradient-to-br from-[#0a2a4a] to-[#2a5a7a]"><i class="fa-sharp fa-solid fa-fw fa-lock"></i></span>
-          <h3 class="text-xl font-bold">Privacy-first architecture</h3>
-          <p>Your health data is encrypted, secure, and never shared without your explicit consent</p>
-        </li>
-        <li class="flex flex-col items-center gap-6 bg-white p-12 rounded-xl">
-          <span class="text-xl p-5 rounded-xl text-white bg-gradient-to-br from-[#0a2a4a] to-[#2a5a7a]"><i class="fa-sharp fa-solid fa-fw fa-chart-simple"></i></span>
-          <h3 class="text-xl font-bold">Evidence-based + actionable insights</h3>
-          <p>Clear, practical guidance you can implement immediately to see real results</p>
-        </li>
-      </ul>
-    </div>
+    <section class="py-16">
+      <div class="container mx-auto px-8 flex flex-col items-center gap-6">
+        <h2 class="text-2xl font-bold">What LONVITA does</h2>
+        <p>Four powerful pillars working together to transform your health journey</p>
+
+        <ul class="grid grid-flow-row grid-cols-1 md:grid-cols-2 xl:grid-cols-4 gap-6">
+          <li class="flex flex-col items-center gap-6 bg-white p-12 rounded-xl">
+            <span class="text-xl p-5 rounded-xl text-white bg-gradient-to-br from-dark-blue to-light-blue"><i class="fa-sharp fa-solid fa-fw fa-layer-group"></i></span>
+            <h3 class="text-xl font-bold">AI Mentor</h3>
+            <p>Personalized daily insights from science and wearables, tailored to your unique biology and goals</p>
+          </li>
+          <li class="flex flex-col items-center gap-6 bg-white p-12 rounded-xl">
+            <span class="text-xl p-5 rounded-xl text-white bg-gradient-to-br from-dark-blue to-light-blue"><i class="fa-sharp fa-solid fa-fw fa-cart-shopping"></i></span>
+            <h3 class="text-xl font-bold">Marketplace</h3>
+            <p>Smart product recommendations including supplements, routines, and tools backed by evidence</p>
+          </li>
+          <li class="flex flex-col items-center gap-6 bg-white p-12 rounded-xl">
+            <span class="text-xl p-5 rounded-xl text-white bg-gradient-to-br from-dark-blue to-light-blue"><i class="fa-sharp fa-regular fa-fw fa-house"></i></span>
+            <h3 class="text-xl font-bold">Longevity Clinics</h3>
+            <p>Access to selected partner facilities across Europe for advanced diagnostics and treatments</p>
+          </li>
+          <li class="flex flex-col items-center gap-6 bg-white p-12 rounded-xl">
+            <span class="text-xl p-5 rounded-xl text-white bg-gradient-to-br from-dark-blue to-light-blue"><i class="fa-sharp fa-solid fa-fw fa-hotel"></i></span>
+            <h3 class="text-xl font-bold">Hotel Collaborations</h3>
+            <p>Luxury hotels in many countries for non-medical treatments, wellness programs, and personalized coaching</p>
+          </li>
+        </ul>
+
+        <p class="py-8 max-w-2xl text-sm text-justify">
+          Most consumers track their health data but do not know how to convert it into meaningful action. Wearable apps provide metrics but lack interpretation and personalised routines. Longevity information is fragmented, unstructured, and often unreliable. LONVITA.IO closes this gap by providing clear, individualised guidance based on aggregated health data, scientific models, and behavioural insights.
+        </p>
+      </div>
+    </section>
+
+    <section class="bg-gradient-to-br from-dark-blue to-light-blue text-white">
+      <div class="container mx-auto py-16 px-8 flex flex-col items-center gap-6">
+        <h2 class="text-2xl font-bold">Who is LONVITA for</h2>
+        <ul class="list-disc max-w-2xl space-y-2">
+          <li>Individuals focused on longevity, fitness, and performance</li>
+          <li>Users of wearables (Apple Health, Garmin, Suunto, Strava, etc.)</li>
+          <li>Wellness travellers and guests of partner hotels/spas seeking integrated digital coaching</li>
+          <li>Health- and performance-oriented consumers who want personalised routines rather than generic advice</li>
+        </ul>
+      </div>
+    </section>
+
+    <section class="bg-beige w-full">
+      <div class="container mx-auto py-16 px-8 flex flex-col items-center gap-6">
+        <h2 class="text-2xl font-bold">Why LONVITA is for you</h2>
+        <p>Built on the foundation of science, privacy, and personalization</p>
+
+        <ul class="grid grid-flow-row grid-cols-1 md:grid-cols-2 xl:grid-cols-4 gap-4">
+          <li class="flex flex-col items-center gap-6 bg-white p-12 rounded-xl">
+            <span class="text-xl p-5 rounded-xl text-white bg-gradient-to-br from-dark-blue to-light-blue"><i class="fa-sharp fa-solid fa-fw fa-book"></i></span>
+            <h3 class="text-xl font-bold">Science-based recommendations</h3>
+            <p>Every insight is grounded in peer-reviewed research and validated clinical studies</p>
+          </li>
+          <li class="flex flex-col items-center gap-6 bg-white p-12 rounded-xl">
+            <span class="text-xl p-5 rounded-xl text-white bg-gradient-to-br from-dark-blue to-light-blue"><i class="fa-sharp fa-solid fa-fw fa-user"></i></span>
+            <h3 class="text-xl font-bold">Personalized guidance using user data + wearables</h3>
+            <p>Integrates seamlessly with your devices to provide truly individualized recommendations</p>
+          </li>
+          <li class="flex flex-col items-center gap-6 bg-white p-12 rounded-xl">
+            <span class="text-xl p-5 rounded-xl text-white bg-gradient-to-br from-dark-blue to-light-blue"><i class="fa-sharp fa-solid fa-fw fa-lock"></i></span>
+            <h3 class="text-xl font-bold">Privacy-first architecture</h3>
+            <p>Your health data is encrypted, secure, and never shared without your explicit consent</p>
+          </li>
+          <li class="flex flex-col items-center gap-6 bg-white p-12 rounded-xl">
+            <span class="text-xl p-5 rounded-xl text-white bg-gradient-to-br from-dark-blue to-light-blue"><i class="fa-sharp fa-solid fa-fw fa-chart-simple"></i></span>
+            <h3 class="text-xl font-bold">Evidence-based + actionable insights</h3>
+            <p>Clear, practical guidance you can implement immediately to see real results</p>
+          </li>
+        </ul>
+      </div>
+    </section>
+
+    <section class="bg-gradient-to-br from-dark-blue to-light-blue text-white">
+      <div class="container mx-auto py-16 px-8 flex flex-col items-center gap-6">
+        <h2 class="text-2xl font-bold">The business</h2>
+        <p class="max-w-2xl text-sm text-justify">
+          LONVITA.IO is a data-driven health and longevity platform that transforms wearable and lifestyle data into personalised, actionable routines. The system combines AI-powered analytics with evidence-based recommendations across movement, recovery, nutrition, and longevity. Users receive daily guidance tailored to their goals, physiology, and habits. The platform targets health-conscious individuals, athletes, and people aiming to improve long-term wellbeing through measurable, science-based interventions.
+        </p>
+
+        <h2 class="text-2xl font-bold">Product Stage</h2>
+        <p class="max-w-2xl text-sm text-justify">
+          The platform is in active development with core features already functional: wearable integrations, AI-based recommendations, and a working marketplace connection. Pilot partnerships with hotels and wellness providers are underway. The next development milestone includes deeper physiological modelling, expanded device integrations, and a refined user interface for the consumer app.
+        </p>
+
+        <h2 class="text-2xl font-bold">Services</h2>
+        <ol class="max-w-2xl text-sm text-justify list-decimal list-inside space-y-2">
+          <li>
+            <strong>AI Longevity Mentor</strong>
+            An intelligent engine that analyses wearable data, lifestyle patterns, and personal goals to generate daily guidance and routine suggestions.
+          </li>
+          <li>
+            <strong>Health & Performance Dashboard</strong>
+            Unified view of sleep, activity, biomarkers (where available), habits, and progress trends.
+          </li>
+        </ol>
+
+        <h2 class="text-2xl font-bold">Team</h2>
+        <p class="max-w-2xl text-sm text-justify">
+          LONVITA.IO is developed by envi GmbH (Austria). The founding team combines expertise in digital health, consumer wellness, retail ecosystems, AI-driven product development, and international go-to-market operations. Additional specialists contribute in the areas of data science, sports science, software engineering, and clinical-grade health content.
+        </p>
+        <ul class="max-w-2xl text-sm text-center space-y-2">
+          <li>Christian Beyer - CEO</li>
+          <li>Alexandra Huber - CMO/CSO</li>
+        </ul>
+      </div>
+    </section>
+
+    <section class="py-16">
+      <div class="container mx-auto px-8 flex flex-col items-center gap-8">
+        <h3 class="text-xl font-bold">Join the LONVITA experience</h3>
+        <ul class="flex flex-row gap-8">
+          <li>
+            <i class="fa-brands fa-app-store fa-2x" title="Apple App Store"></i>
+            <span class="sr-only">Apple App Store</span>
+          </li>
+          <li>
+            <i class="fa-brands fa-google-play fa-2x" title="Google Play Store"></i>
+            <span class="sr-only">Google Play Store</span>
+          </li>
+        </ul>
+      </div>
+    </section>
+
   </main>
 
-  <footer class="bg-gradient-to-br from-[#0a2a4a] to-[#2a5a7a] text-white">
-    <!--<div class="container mx-auto py-16 px-8 flex flex-col items-center gap-4">
-      <h3 class="text-xl font-bold">Join the LONVITA experience</h3>
-      <ul class="flex flex-row gap-4">
-        <li>Apple App Store</li>
-        <li>Google Play Store</li>
-      </ul>
-    </div>-->
+  <footer class="bg-gradient-to-br from-dark-blue to-light-blue text-white">
 
-    <div class="container mx-auto p-8 flex flex-row flex-wrap md:justify-center items-center gap-4 text-xs">
-      <p>
-        envi GmbH<br>
-        Geschäftsführer: Christian Beyer | Alexandra Huber<br>
-        Mooslenz 39<br>
-        6345 Kössen, Österreich
-      </p>
+    <div class="container mx-auto p-8 text-xs flex flex-col items-center gap-4">
+      <strong class="text-xl">LONVITA.IO</strong>
+      <div class="flex flex-row flex-wrap md:justify-center items-top gap-16">
+        <p>
+          envi GmbH<br>
+          Geschäftsführer: Christian Beyer, Alexandra Huber<br>
+          Mooslenz 39<br>
+          6345 Kössen, Österreich
+        </p>
 
-      <p>
-        Firmenbuchnummer: FN 524080g<br>
-        Firmenbuchgericht: Landesgericht Innsbruck<br>
-        Umsatzsteuer-Identifikationsnummer (UID): ATU75083623<br>
-        GLN: 9110028339202<br>
-        EORI: ATEOS1000104620
-      </p>
+        <p>
+          Firmenbuchnummer: FN 524080g<br>
+          Firmenbuchgericht: Landesgericht Innsbruck<br>
+          Umsatzsteuer-Identifikationsnummer (UID): ATU75083623<br>
+          GLN: 9110028339202<br>
+          EORI: ATEOS1000104620
+        </p>
 
-      <p>
-        Kontakt:<br>
-        Telefon: +43 664 18 23 926<br>
-        E-Mail: contact@lonvita.io
-      </p>
+        <p>
+          Kontakt:<br>
+          Telefon: +43 664 18 23 926<br>
+          E-Mail: contact@lonvita.io
+        </p>
+      </div>
     </div>
   </footer>
 </body>
